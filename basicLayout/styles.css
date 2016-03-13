@@ -1,0 +1,146 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #e238ec;
+    box-shadow: 2px 2px 10px #000;
+    z-index: 1000000000;
+}
+
+header .logo{
+    float: left;
+}
+
+header nav {
+    float: left;
+    position: relative;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header nav #main-nav  > li {
+    float: left;
+    position: relative;
+    transition: background-color 0.2s ease-in-out;
+}
+header nav #main-nav  > li:hover {
+    background-color: #778899;
+} 
+
+header nav #main-nav ul.dropdown {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    margin-top: -9999px;
+    background-color: #778899;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+header nav #main-nav li.has-dropdown:hover > ul.dropdown {
+    margin-top: 0;
+    opacity: 1;
+}
+header nav ul.dropdown li {
+    transition: background-color 0.2s ease-in-out;
+}
+
+header nav #main-nav ul.dropdown li:hover {
+    background-color: #B0C4DE;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 38px 38px 39px 38px;
+    text-decoration: none;
+    color: #000066;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+footer {
+    width: 100%;
+    height: 75px;
+    padding-top: 30px;
+    background-color: #778899;
+    box-shadow: 2px -2px 10px #000;
+}
+
+footer p {
+    color: #000066;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content {
+    padding-top: 150px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section::after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.event {
+    display: inline-block;
+    margin-right: 25px;
+    transition: transform 0.2s ease-in-out;
+}
+.event:hover {
+    transform: scale(1.1);
+}
+
+
+.event.last {
+    margin-right: 0;
+}
+
+.upcoming_news {
+    overflow: auto;
+}
+
+.upcoming_news .news {
+    float: left;
+    width: 50%;
+}
+
+.upcoming_news .news.right {
+    box-sizing: border-box;
+    max-height: 300px;
+    padding-left: 30px;
+    overflow-y: auto;
+}
+
+.upcoming_news .news.right h3 {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
